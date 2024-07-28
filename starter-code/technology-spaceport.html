@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/technology-spaceport.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="overlay-menu">
+      <input class="overlay__hamberger-button" type="button" value="" />
+      <div class="overlay__links">
+        <a href="/index.html" class="overlay__link"><b>00</b>Home</a>
+        <a href="/starter-code/destination-moon.html" class="overlay__link"
+          ><b>01</b>destination</a
+        >
+        <a href="/starter-code/crew-commander.html" class="overlay__link"
+          ><b>02</b>crew</a
+        >
+        <a href="/starter-code/technology-vehicle.html" class="overlay__link"
+          ><b>03</b>technology</a
+        >
+      </div>
+    </section>
+    <main class="technology__main-container main-container">
+      <div
+        class="navbar__glassmorphism"
+        data-aos="zoom-in"
+        data-aos-duration="750"
+      ></div>
+      <hr class="navbar__line" data-aos="zoom-in" data-aos-duration="750" />
+      <nav class="navbar" data-aos="fade-down" data-aos-duration="750">
+        <img
+          src="/starter-code/assets/shared/logo.svg"
+          alt=""
+          class="navbar__logo"
+        />
+        <div>
+          <input class="navbar__hamberger-menu" type="button" value="" />
+          <div class="navbar__links">
+            <a href="/index.html" class="navbar__link">Home</a>
+            <a href="/starter-code/destination-moon.html" class="navbar__link"
+              >destination</a
+            >
+            <a href="/starter-code/crew-commander.html" class="navbar__link"
+              >crew</a
+            >
+            <a href="/starter-code/technology-vehicle.html" class="navbar__link"
+              >technology</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <section class="technology">
+        <h1
+          class="technology__heading"
+          data-aos="fade-right"
+          data-aos-duration="750"
+        >
+          <b>03</b> Space launch 101
+        </h1>
+        <div class="technology__image-container">
+          <img
+            src="/starter-code/assets/technology/image-spaceport-landscape.jpg"
+            alt=""
+            class="technology__image"
+            data-aos="zoom-in"
+            data-aos-duration="750"
+          />
+        </div>
+
+        <div class="technology__buttons-texts-image">
+          <div
+            class="technology__buttons"
+            data-aos="zoom-in"
+            data-aos-duration="750"
+          >
+            <a href="/starter-code/technology-vehicle.html">
+              <button class="technology__button technology__vehicle-button">
+                1
+              </button>
+            </a>
+            <a href="/starter-code/technology-spaceport.html">
+              <button class="technology__button technology__spaceport-button">
+                2
+              </button>
+            </a>
+            <a href="/starter-code/technology-capsule.html">
+              <button class="technology__button technology__capsule-button">
+                3
+              </button>
+            </a>
+          </div>
+
+          <div
+            class="technology__texts"
+            data-aos="zoom-in"
+            data-aos-duration="750"
+          >
+            <h2 class="technology__sub-heading">
+              <b>The terminology...</b> <br />
+              Spaceport
+            </h2>
+
+            <p class="technology__paragraph">
+              A spaceport or cosmodrome is a site for launching (or receiving)
+              spacecraft, by analogy to the seaport for ships or airport for
+              aircraft. Based in the famous Cape Canaveral, our spaceport is
+              ideally situated to take advantage of the Earth’s rotation for
+              launch.
+            </p>
+          </div>
+          <img
+            src="/starter-code/assets/technology/image-spaceport-portrait.jpg"
+            alt=""
+            class="technology__image-desktop"
+            data-aos="fade-up"
+            data-aos-duration="750"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

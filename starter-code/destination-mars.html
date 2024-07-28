@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/destination-mars.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="overlay-menu">
+      <input class="overlay__hamberger-button" type="button" value="" />
+      <div class="overlay__links">
+        <a href="/index.html" class="overlay__link"><b>00</b>Home</a>
+        <a href="/starter-code/destination-moon.html" class="overlay__link"
+          ><b>01</b>destination</a
+        >
+        <a href="/starter-code/crew-commander.html" class="overlay__link"
+          ><b>02</b>crew</a
+        >
+        <a href="/starter-code/technology-vehicle.html" class="overlay__link"
+          ><b>03</b>technology</a
+        >
+      </div>
+    </section>
+    <main class="destination__main-container main-container">
+      <div
+        class="navbar__glassmorphism"
+        data-aos="zoom-in"
+        data-aos-duration="750"
+      ></div>
+      <hr class="navbar__line" data-aos="zoom-in" data-aos-duration="750" />
+      <nav class="navbar" data-aos="fade-down" data-aos-duration="750">
+        <img
+          src="/starter-code/assets/shared/logo.svg"
+          alt=""
+          class="navbar__logo"
+        />
+        <div>
+          <input class="navbar__hamberger-menu" type="button" value="" />
+          <div class="navbar__links">
+            <a href="/index.html" class="navbar__link">Home</a>
+            <a href="/starter-code/destination-moon.html" class="navbar__link"
+              >destination</a
+            >
+            <a href="/starter-code/crew-commander.html" class="navbar__link"
+              >crew</a
+            >
+            <a href="/starter-code/technology-vehicle.html" class="navbar__link"
+              >technology</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <section class="destination">
+        <div data-aos="fade-right" data-aos-duration="750">
+          <h1 class="destination__heading"><b>01</b> Pick your destination</h1>
+          <div class="destination__image-container">
+            <img
+              src="/starter-code/assets/destination/image-mars.webp"
+              alt=""
+              class="destination__image"
+            />
+          </div>
+        </div>
+        <div
+          class="destination__links-texts"
+          data-aos="zoom-in"
+          data-aos-duration="750"
+        >
+          <div class="destination__buttons">
+            <a href="/starter-code/destination-moon.html">
+              <button class="destination__button destination__moon-button">
+                Moon
+              </button>
+            </a>
+            <a href="/starter-code/destination-mars.html">
+              <button class="destination__button destination__mars-button">
+                Mars
+              </button>
+            </a>
+            <a href="/starter-code/destination-europa.html">
+              <button class="destination__button destination__europa-button">
+                Europa
+              </button>
+            </a>
+            <a href="/starter-code/destination-titan.html">
+              <button class="destination__button destination__titan-button">
+                Titan
+              </button>
+            </a>
+          </div>
+          <h2 class="destination__sub-heading">Mars</h2>
+          <p class="destination__paragraph">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+          <hr class="destination__line" />
+          <div class="destination__distance-travel">
+            <p class="destination__distance">
+              Avg. distance<br /><b>225 mil. km</b>
+            </p>
+            <p class="destination__travel-time">
+              Est. travel time<br /><b>9 months</b>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
