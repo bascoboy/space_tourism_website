@@ -1,126 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- The head section contains meta-information about the webpage -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/destination-titan.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Frontend Mentor | Space tourism website</title>
-  </head>
-  <body>
-    <section class="overlay-menu">
-      <input class="overlay__hamberger-button" type="button" value="" />
-      <div class="overlay__links">
-        <a href="/index.html" class="overlay__link"><b>00</b>Home</a>
-        <a href="/starter-code/destination-moon.html" class="overlay__link"
-          ><b>01</b>destination</a
-        >
-        <a href="/starter-code/crew-commander.html" class="overlay__link"
-          ><b>02</b>crew</a
-        >
-        <a href="/starter-code/technology-vehicle.html" class="overlay__link"
-          ><b>03</b>technology</a
-        >
+<head>
+  <!-- Specifies the character encoding for the HTML document -->
+  <meta charset="UTF-8" />
+  <!-- Ensures the webpage is responsive and adjusts to the screen width of the device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Links to the favicon icon for the website, which appears in the browser tab -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <!-- Links to an external CSS file for general styles -->
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <!-- Links to an external CSS file specific to the "destination-titan" page -->
+  <link rel="stylesheet" href="/CSS/destination-titan.css" />
+  <!-- Links to an external library for animations on scroll (AOS) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Links to the AOS JavaScript file -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Sets the title of the webpage, which appears in the browser tab -->
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<!-- The body section contains the content of the webpage -->
+
+<body>
+  <!-- A section for the overlay menu that appears when the hamburger button is clicked -->
+  <section class="overlay-menu">
+    <!-- A button for the hamburger menu -->
+    <input class="overlay__hamberger-button" type="button" value="" />
+    <!-- Links that appear in the overlay menu -->
+    <div class="overlay__links">
+      <a href="/index.html" class="overlay__link"><b>00</b>Home</a>
+      <a href="/starter-code/destination-moon.html" class="overlay__link"><b>01</b>destination</a>
+      <a href="/starter-code/crew-commander.html" class="overlay__link"><b>02</b>crew</a>
+      <a href="/starter-code/technology-vehicle.html" class="overlay__link"><b>03</b>technology</a>
+    </div>
+  </section>
+
+  <!-- The main content of the page, wrapped in a container -->
+  <main class="destination__main-container main-container">
+    <!-- A glassmorphism effect for the navbar, with animation on scroll -->
+    <div class="navbar__glassmorphism" data-aos="zoom-in" data-aos-duration="750"></div>
+    <!-- A horizontal line in the navbar, with animation on scroll -->
+    <hr class="navbar__line" data-aos="zoom-in" data-aos-duration="750" />
+    <!-- The navbar section, with animation on scroll -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="750">
+      <!-- The logo in the navbar -->
+      <img src="/starter-code/assets/shared/logo.svg" alt="" class="navbar__logo" />
+      <div>
+        <!-- A button for the hamburger menu in the navbar -->
+        <input class="navbar__hamberger-menu" type="button" value="" />
+        <!-- Links in the navbar -->
+        <div class="navbar__links">
+          <a href="/index.html" class="navbar__link">Home</a>
+          <a href="/starter-code/destination-moon.html" class="navbar__link">destination</a>
+          <a href="/starter-code/crew-commander.html" class="navbar__link">crew</a>
+          <a href="/starter-code/technology-vehicle.html" class="navbar__link">technology</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- The section for the destination content -->
+    <section class="destination">
+      <!-- A container for the heading and image, with animation on scroll -->
+      <div data-aos="fade-right" data-aos-duration="750">
+        <!-- The main heading for the destination section -->
+        <h1 class="destination__heading"><b>01</b> Pick your destination</h1>
+        <!-- A container for the destination image -->
+        <div class="destination__image-container">
+          <!-- The image of the destination (Titan) -->
+          <img src="/starter-code/assets/destination/image-titan.webp" alt="" class="destination__image" />
+        </div>
+      </div>
+      <!-- A container for the buttons and text content, with animation on scroll -->
+      <div class="destination__links-texts" data-aos="zoom-in" data-aos-duration="750">
+        <!-- The buttons for selecting different destinations -->
+        <div class="destination__buttons">
+          <a href="/starter-code/destination-moon.html">
+            <button class="destination__button destination__moon-button">
+              Moon
+            </button>
+          </a>
+          <a href="/starter-code/destination-mars.html">
+            <button class="destination__button destination__mars-button">
+              Mars
+            </button>
+          </a>
+          <a href="/starter-code/destination-europa.html">
+            <button class="destination__button destination__europa-button">
+              Europa
+            </button>
+          </a>
+          <a href="/starter-code/destination-titan.html">
+            <button class="destination__button destination__titan-button">
+              Titan
+            </button>
+          </a>
+        </div>
+        <!-- The sub-heading for the selected destination (Titan) -->
+        <h2 class="destination__sub-heading">Titan</h2>
+        <!-- A paragraph describing the destination -->
+        <p class="destination__paragraph">
+          The only moon known to have a dense atmosphere other than Earth,
+          Titan is a home away from home (just a few hundred degrees colder!).
+          As a bonus, you get striking views of the Rings of Saturn.
+        </p>
+        <!-- A horizontal line under the paragraph -->
+        <hr class="destination__line" />
+        <!-- A container for the distance and travel time information -->
+        <div class="destination__distance-travel">
+          <!-- Average distance to the destination -->
+          <p class="destination__distance">
+            Avg. distance<br /><b>1.6 bil. km</b>
+          </p>
+          <!-- Estimated travel time to the destination -->
+          <p class="destination__travel-time">
+            Est. travel time<br /><b>7 years</b>
+          </p>
+        </div>
       </div>
     </section>
-    <main class="destination__main-container main-container">
-      <div
-        class="navbar__glassmorphism"
-        data-aos="zoom-in"
-        data-aos-duration="750"
-      ></div>
-      <hr class="navbar__line" data-aos="zoom-in" data-aos-duration="750" />
-      <nav class="navbar" data-aos="fade-down" data-aos-duration="750">
-        <img
-          src="/starter-code/assets/shared/logo.svg"
-          alt=""
-          class="navbar__logo"
-        />
-        <div>
-          <input class="navbar__hamberger-menu" type="button" value="" />
-          <div class="navbar__links">
-            <a href="/index.html" class="navbar__link">Home</a>
-            <a href="/starter-code/destination-moon.html" class="navbar__link"
-              >destination</a
-            >
-            <a href="/starter-code/crew-commander.html" class="navbar__link"
-              >crew</a
-            >
-            <a href="/starter-code/technology-vehicle.html" class="navbar__link"
-              >technology</a
-            >
-          </div>
-        </div>
-      </nav>
+  </main>
+  <!-- Links to the main JavaScript file for the webpage -->
+  <script src="/index.js"></script>
+  <!-- Initializes the AOS (Animation On Scroll) library -->
+  <script>
+    AOS.init();
+  </script>
+</body>
 
-      <section class="destination">
-        <div data-aos="fade-right" data-aos-duration="750">
-          <h1 class="destination__heading"><b>01</b> Pick your destination</h1>
-          <div class="destination__image-container">
-            <img
-              src="/starter-code/assets/destination/image-titan.webp"
-              alt=""
-              class="destination__image"
-            />
-          </div>
-        </div>
-        <div
-          class="destination__links-texts"
-          data-aos="zoom-in"
-          data-aos-duration="750"
-        >
-          <div class="destination__buttons">
-            <a href="/starter-code/destination-moon.html">
-              <button class="destination__button destination__moon-button">
-                Moon
-              </button>
-            </a>
-            <a href="/starter-code/destination-mars.html">
-              <button class="destination__button destination__mars-button">
-                Mars
-              </button>
-            </a>
-            <a href="/starter-code/destination-europa.html">
-              <button class="destination__button destination__europa-button">
-                Europa
-              </button>
-            </a>
-            <a href="/starter-code/destination-titan.html">
-              <button class="destination__button destination__titan-button">
-                Titan
-              </button>
-            </a>
-          </div>
-          <h2 class="destination__sub-heading">Titan</h2>
-          <p class="destination__paragraph">
-            The only moon known to have a dense atmosphere other than Earth,
-            Titan is a home away from home (just a few hundred degrees colder!).
-            As a bonus, you get striking views of the Rings of Saturn.
-          </p>
-          <hr class="destination__line" />
-          <div class="destination__distance-travel">
-            <p class="destination__distance">
-              Avg. distance<br /><b>1.6 bil. km</b>
-            </p>
-            <p class="destination__travel-time">
-              Est. travel time<br /><b>7 years</b>
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="/index.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
 </html>
